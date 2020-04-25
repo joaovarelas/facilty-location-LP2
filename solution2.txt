@@ -1,0 +1,11 @@
+
+*****************************************
+Town with MINIMUM cost (DC): Lisbon
+Town with MINIMUM cost (DC): Loule
+Town with MINIMUM cost (DC): Ourem
+Town with MINIMUM cost (DC): Pedroucos
+Town with MINIMUM cost (DC): Sernancelhe
+*****************************************
+Town with LARGEST DELIVERY cost: Lisbon
+*****************************************
+
