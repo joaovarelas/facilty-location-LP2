@@ -5,7 +5,7 @@ mainfontoptions:
 - BoldFont=PTS75F.ttf
 - ItalicFont=PTS56F.ttf
 - BoldItalicFont=PTS76F.ttf
-title: "Decision Support Methods - Assignment 1"
+title: "Decision Support Methods - Assignment 2"
 author:
 - Diogo Cordeiro
 - João Varelas
