@@ -3,7 +3,7 @@ solvedata="solve.dat"
 populationdata="population.dat"
 
 fail() {
-    printf "Inexistent. Run this as:\\n  %s (1|2)\\n Where the argument specifies the exercise to solve\\n" "$0";
+    printf "Inexistent. Run this as:\\n  %s (1|2)...\\n Where the argument specifies the exercise to solve\\n" "$0";
     exit 1;
 }
 
