@@ -1,9 +1,12 @@
 #!/bin/sh
+
 solvedata="solve.dat"
 populationdata="population.dat"
+model="facility_location.mod"
+outputsol="problem.sol"
 
 fail() {
-    printf "Inexistent. Run this as:\\n  %s (1|2)...\\n Where the argument specifies the exercise to solve\\n" "$0";
+    printf "Run this as:\\n  %s (1|2)...\\n Where the argument specifies the exercise to solve\\n" "$0";
     exit 1;
 }
 
@@ -25,7 +28,7 @@ do
     echo "data;" > $solvedata
     echo "param afford_limit := $budget;" >> $solvedata
     while read -r line; do echo "$line" >> $solvedata; done < $populationdata
-    glpsol --math problem.mod --data $solvedata -o problem1.sol
+    glpsol --math $model --data $solvedata -o $outputsol
     rm -rf $solvedata
     shift
 done
