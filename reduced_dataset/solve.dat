@@ -1,0 +1,15 @@
+data;
+param afford_limit := 25000;
+param: City: population latitude longitude :=
+
+Lisbon 517802 38.71667 -9.13333
+Porto 249633 41.14961 -8.61099
+Braga 121394 41.55032 -8.42005
+Coimbra 106582 40.20564 -8.41955
+Braganca 34375 41.80582 -6.75719
+Guarda 32111 40.53733 -7.26575
+Viseu 26364 40.66101 -7.90971
+Vila_Real_de_Santo_Antonio 11560 37.195 -7.41766
+;
+
+end;
