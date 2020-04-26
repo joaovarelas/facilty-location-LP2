@@ -1,5 +1,5 @@
 data;
-param afford_limit := 125000;
+param afford_limit := 25000;
 param: City: population latitude longitude :=
 
 Lisbon	517802	38.71667	-9.13333
