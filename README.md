@@ -1,11 +1,16 @@
 ---
-title: "Métodos de Apoio à Decisão - Trabalho 2"
-author: 
-    |
-    | Diogo Cordeiro & João Varelas
-    |
-    | DCC - FCUP, Abril 2020
-geometry: margin=3.6cm
+mainfont: PTS55F.ttf
+monofont: Hack-Regular.ttf
+mainfontoptions:
+- BoldFont=PTS75F.ttf
+- ItalicFont=PTS56F.ttf
+- BoldItalicFont=PTS76F.ttf
+title: "Decision Support Methods - Assignment 1"
+author:
+- Diogo Cordeiro
+- João Varelas
+geometry: a4paper
+geometry: margin=2cm
 output: pdf_document
 ---
 
