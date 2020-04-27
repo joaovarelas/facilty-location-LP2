@@ -16,7 +16,7 @@ output: pdf_document
 
 # Introduction
 
-This problem consist in locating one or more facilities (DC) given a set of candidates towns.
+This problem consists in locating one or more facilities (DC) given a set of candidates towns.
 The available dataset [1] contains population of each city and coordinates
 allowing us to calculate the distances between them. Distance will reflect in delivery
 costs for towns that are far away from distribution center.
@@ -70,7 +70,7 @@ $deliver_{c_{i} c_{j}} \in \{0,1\}$    | DC at city $c_{i}$ delivers to city $c_
 
 \begin{center}
 \begin{tabular}{ r l r r }
- $\hfill \text{minimize}$ & $\ z \equal \sum\limits_{c \in City}{dc_{c} \times yearly\_cost} + \sum\limits_{\substack{\\c_{i} \in City\\c_{i} \in City\\}}{deliver_{c_{i} c_{j}} \times cost_{c_{i} c_{j}}}$ & \ & $\hfill (1)$ \\
+ $\hfill \text{minimize}$ & $\ z \equal \sum\limits_{c \in City}{dc_{c} \times yearly\_cost} + \sum\limits_{\substack{\\c_{i} \in City\\c_{j} \in City\\}}{deliver_{c_{i} c_{j}} \times cost_{c_{i} c_{j}}}$ & \ & $\hfill (1)$ \\
  
  \\
  
@@ -78,7 +78,7 @@ $deliver_{c_{i} c_{j}} \in \{0,1\}$    | DC at city $c_{i}$ delivers to city $c_
  
  \\
  
- $\hfill$ & $\sum\limits_{\substack{\\i \in City\\}}{deliver_{c_{i} c_{j}}} \equal 1,$ & $\forall c_{j} \in City$ & $\hfill (3)$ \\
+ $\hfill$ & $\sum\limits_{\substack{\\c_{i} \in City\\}}{deliver_{c_{i} c_{j}}} \equal 1,$ & $\forall c_{j} \in City$ & $\hfill (3)$ \\
  
  \\
  
@@ -91,7 +91,9 @@ $deliver_{c_{i} c_{j}} \in \{0,1\}$    | DC at city $c_{i}$ delivers to city $c_
 
 ## Solution
 
-Our model was implemented in GLPK. The solution can be obtained by running `$ ./solve_problem.sh 1`. 
+Our model was implemented in GLPK. 
+
+The solution can be obtained by running `$ ./solve_problem.sh 1`. 
 
 Optimum cost $z$ is `3831575€` and the location of DC is `Santarém`.
 The town with largest delivery costs `167036€` is `Lisbon` (from `Santarém`).
