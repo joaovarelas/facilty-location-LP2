@@ -18,8 +18,8 @@ param dist{src in City, dst in City} :=
     + abs(longitude[dst] - longitude[src]) ) / 360;
 
 
-var dc{City}, binary;
-var deliver{City, City}, binary;
+var dc{City}, binary; # DC is placed at city src
+var deliver{City, City}, binary; # city src delivers to city dst
 
 param cost{src in City, dst in City} := dist[src,dst] * deliveries[dst];
 
