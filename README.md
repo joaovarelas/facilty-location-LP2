@@ -134,3 +134,8 @@ We conclude that `Évora` is the town with largest delivery costs.
 # References
 
 [1] [https://www.dcc.fc.up.pt/~jpp/mad1920/PopulationContPT-2020.csv](https://www.dcc.fc.up.pt/~jpp/mad1920/PopulationContPT-2020.csv)
+
+
+# Appendix
+
+![Map of Portugal - Visualization of solution for question 2](map.png){ width=500px }
